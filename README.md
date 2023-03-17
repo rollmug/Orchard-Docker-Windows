@@ -129,3 +129,9 @@ docker-compose up -d
 ```
 
 The `-d` flag will run it in detached mode. Feel free to close the terminal session. You should again be able to navigate to `http://localhost:8080`, and the data from your initial setup should still be there.
+
+To stop the running Orchard container, simply run:
+
+```sh
+docker-compose down
+```

@@ -17,12 +17,12 @@ This is a walkthrough on getting up and running with Orchard Core CMS on Windows
 Log into your Windows Server machine as Administrator, and open Windows Server Manager. Then:
 
 1. select "Manage" from the top menu bar (or under the Quick Start menu on Dashboard), and select "Add Roles and Features"
-2. click Next on the Before You Begin page
-3. for Installation type, select Role-based, and then Next
-4. select the name of the server where the feature will be installed and click Next
-5. no changes are to be made on the Server Roles page, so just click Next
-6. on the Features page, check the box next to Containers and click Next
-7. click Install
+2. click Next on the "Before You Begin" page
+3. for Installation type, select "Role-based", and then Next
+4. select the name of the server where the feature will be installed and click "Next"
+5. no changes are to be made on the Server Roles page, so just click "Next"
+6. on the Features page, check the box next to "Containers" and click "Next"
+7. click "Install"
 8. when it's done, click close
 9. restart the machine
 

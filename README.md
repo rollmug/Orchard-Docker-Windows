@@ -1,7 +1,7 @@
 # Orchard + Docker + Windows Server
 ### Running Orchard Core CMS with Docker on Windows Server 2022
 
-This is a walkthrough on getting up and running with Orchard Core CMS on Windows Server 2022, using Docker with Windows containers, along with a docker-compose.yml file. 
+This is a walkthrough on getting up and running with Orchard Core CMS on Windows Server 2022, using Docker with Windows containers, along with a sample docker-compose.yml file. 
 
 _Note: this procedure will probably also work on Windows Server 2016 or greater, although I haven't tested it._
 

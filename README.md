@@ -30,41 +30,59 @@ Log into your Windows Server machine as Administrator, and open Windows Server M
 
 After the system has rebooted, run PowerShell as Administrator. From there, run the following:
 
-`Install-Module -Name DockerMsftProvider -Repository PSGallery –Force`
+```sh
+Install-Module -Name DockerMsftProvider -Repository PSGallery –Force
+```
 
 This command will prompt you to install the Nuget provider in order to install the module. Go for it. Then, run the below command to install the latest Docker version:
 
-`Install-Package -Name docker -ProviderName DockerMsftProvider`
+```sh
+Install-Package -Name docker -ProviderName DockerMsftProvider
+```
 
 Select "Yes to all", then: 
 
-`Restart-Computer`
+```sh
+Restart-Computer
+```
 
 Once it's rebooted, re-open PowerShell as Administrator, and confirms that it's working by running: 
 
-`Get-WindowsFeature -Name containers`
+```sh
+Get-WindowsFeature -Name containers
+```
 
 Now check the docker version, and verify it's running with by using these two commands:
 
-`docker --version`
+```sh
+docker --version
+```
 
 and also: 
 
-`Get-Service docker`
+```sh
+Get-Service docker
+```
 
 ## Install Docker Compose
 
 Run PowerShell as Administrator. Enable TLS 1.2 by running:
 
-`[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12`
+```sh
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+```
 
 Run the following command to download the latest release of Compose (as of this writing, v2.16.0, but change the version as needed):
 
-`Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-Windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe`
+```sh
+Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-Windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
+```
 
 Test the installation:
 
-`docker-compose version`
+```sh
+docker-compose version
+```
 
 ## Orchard Core CMS
 
@@ -94,7 +112,9 @@ From the command line, cd into the parent directory (`Orchard-Core-CMS`, or what
 
 Run:
 
-`docker-compose up`
+```sh
+docker-compose up
+```
 
 This will take a while the first time you run it, but subsequent builds will be very fast. You'll see lots of logs. If all goes well, at the end of this you should be able to navigate to `http://localhost:8080` and continue your Orchard Core setup from within the browser.
 
@@ -104,6 +124,8 @@ If all is going well, now you can exit the session by typing Ctrl+C. We'll now w
 
 Now, run:
 
-`docker-compose up -d`
+```sh
+docker-compose up -d
+```
 
 The `-d` flag will run it in detached mode. Feel free to close the terminal session. You should again be able to navigate to `http://localhost:8080`, and the data from your initial setup should still be there.

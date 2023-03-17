@@ -5,11 +5,11 @@ This is a walkthrough on getting up and running with Orchard Core CMS on Windows
 
 **Overview:**
 
-- enable the Containers feature in Windows Server Manager
-- install Docker 
-- install Docker Compose
-- create files and set permissions
-- run docker-compose command
+- [enable the Containers](#enable-containers) feature in Windows Server Manager
+- [install Docker](#install-docker)
+- [install Docker Compose](#install-docker-compose)
+- [create files and set permissions](#orchard-core-cms)
+- [run docker-compose command](#running-docker-compose-and-orchard)
 - live long and prosper
 
 ## Enable Containers

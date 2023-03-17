@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  orchard:
+    image: orchardproject/orchardcore-cms-windows:latest
+    restart: always
+    environment:
+      ORCHARD_APP_DATA: /app/App_Data
+    ports:
+      - "8080:80"
+    volumes:
+      - ./App_Data:c:/app/App_Data

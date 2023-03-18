@@ -12,7 +12,6 @@ _Note: this procedure will probably also work on Windows Server 2016 or greater,
 - [install Docker Compose](#install-docker-compose)
 - [create files and set permissions](#orchard-core-cms)
 - [run docker-compose command](#running-docker-compose-and-orchard)
-- live long and prosper
 
 ## Enable Containers
 
@@ -48,7 +47,7 @@ Select "Yes to all", then:
 Restart-Computer
 ```
 
-Once it's rebooted, re-open PowerShell as Administrator, and confirms that it's working by running: 
+Once it's rebooted, re-open PowerShell as Administrator, and confirm that it's working by running: 
 
 ```sh
 Get-WindowsFeature -Name containers
@@ -102,7 +101,7 @@ Follow these steps to add the "Users" group to our app:
 6. where it says "Enter the object names", type "users" in the text box
 7. click "Check Names" (should auto fill the value for you)
 8. click OK
-9. Highlight your newly added group
+9. Highlight your newly added Users group
 10. Under "Permissions for [User/Groupname]" select Full control
 11. click apply
 12. click "OK"

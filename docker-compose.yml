@@ -10,3 +10,7 @@ services:
       - "8080:80"
     volumes:
       - ./App_Data:c:/app/App_Data
+    networks:
+      - orchard
+networks:
+  orchard:
